@@ -1,5 +1,7 @@
 # TuringStats for Amiga
 
+![A4000TX with the TuringStats USB display](docs/a4000tx-turingstats.jpg)
+
 ![TuringStats icon](docs/icon.png)
 
 **0.1.0 Beta 1** — a native Amiga dashboard for a Turing 3.5-inch USB LCD.

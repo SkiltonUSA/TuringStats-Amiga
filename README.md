@@ -1,6 +1,8 @@
 # TuringStats for Amiga
 
-![A4000TX with the TuringStats USB display](docs/a4000tx-turingstats.jpg)
+| Live display | A4000TX installation |
+| --- | --- |
+| ![TuringStats drive and network page on the USB LCD](docs/a4000tx-turingstats.jpg) | ![A4000TX tower with the TuringStats system monitor display](docs/a4000tx-installation.jpg) |
 
 ![TuringStats icon](docs/icon.png)
 

@@ -1,0 +1,6 @@
+.context/
+.tools/
+build/
+dist/
+__pycache__/
+.DS_Store

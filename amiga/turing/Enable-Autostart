@@ -1,0 +1,10 @@
+FailAt 10
+If NOT EXISTS SYS:TuringStats
+ Echo "Install TuringStats first."
+ Quit 20
+EndIf
+Copy SYS:TuringStats SYS:WBStartup/TuringStats
+Copy SYS:TuringStats.info SYS:WBStartup/TuringStats.info
+Protect SYS:WBStartup/TuringStats +e
+Echo "TuringStats will start at boot when its USB display is present."
+Echo "If the display is absent, startup skips it quietly."

@@ -1,0 +1,54 @@
+; TuringStats 0.1.0 Beta 1 - run from the extracted package drawer.
+FailAt 21
+Stack 65536
+If NOT EXISTS Files/TuringStats
+ Echo "Open the extracted TuringStats package drawer before running Install."
+ Quit 20
+EndIf
+Version icon.library 44 >NIL:
+If WARN
+ Echo "TuringStats needs icon.library 44 or newer for its Workbench icons."
+ Quit 20
+EndIf
+Version poseidon.library 4 >NIL:
+If WARN
+ Echo "Install/start Poseidon USB 4 or newer, then run Install again."
+ Quit 20
+EndIf
+FailAt 10
+If EXISTS SYS:Utilities/TuringStats/TuringStats
+ SYS:Utilities/TuringStats/TuringStats STOP
+ Wait 5
+ Copy SYS:Utilities/TuringStats/TuringStats SYS:Utilities/TuringStats/TuringStats.previous
+EndIf
+If NOT EXISTS SYS:Utilities/TuringStats
+ MakeDir SYS:Utilities/TuringStats
+EndIf
+Copy Files/TuringStats SYS:Utilities/TuringStats/TuringStats
+Copy Files/TuringStatsLaunch SYS:TuringStats
+Copy Files/Start SYS:Utilities/TuringStats/Start
+Copy Files/Stop SYS:Utilities/TuringStats/Stop
+Copy ReadMe.txt SYS:Utilities/TuringStats/ReadMe.txt
+Copy COPYING SYS:Utilities/TuringStats/COPYING
+Protect SYS:Utilities/TuringStats/TuringStats +e
+Protect SYS:TuringStats +e
+Protect SYS:Utilities/TuringStats/Start +se
+Protect SYS:Utilities/TuringStats/Stop +se
+If NOT EXISTS SYS:Utilities/TuringStats.info
+ Copy Files/Drawer.info SYS:Utilities/TuringStats.info
+EndIf
+If NOT EXISTS SYS:TuringStats.info
+ Copy Files/App.info SYS:TuringStats.info
+EndIf
+If NOT EXISTS SYS:Utilities/TuringStats/Start.info
+ Copy Files/Start.info SYS:Utilities/TuringStats/Start.info
+EndIf
+If NOT EXISTS SYS:Utilities/TuringStats/Stop.info
+ Copy Files/Stop.info SYS:Utilities/TuringStats/Stop.info
+EndIf
+If EXISTS SYS:WBStartup/TuringStats
+ Copy Files/TuringStatsLaunch SYS:WBStartup/TuringStats
+ Protect SYS:WBStartup/TuringStats +e
+EndIf
+Echo "TuringStats installed. Double-click TuringStats on the System drive."
+Echo "For automatic startup, run Enable-Autostart once."

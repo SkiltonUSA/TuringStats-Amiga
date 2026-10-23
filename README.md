@@ -22,6 +22,24 @@ running alongside it.
 - Missing display at boot is skipped quietly. Reconnect and relaunch the icon.
 - One-instance protection and native framebuffer captures.
 
+## Display hardware
+
+[3.5-inch USB IPS hardware-monitor display — Temu listing](https://www.temu.com/3-5-inch-secondary-display-ips--angle-monitor-usb-surveillance-screen-usb-powered-pc-hardware--screen-desktop-pc--monitor-64-pre--for-computer-monitoring-aiad64-no-installation-required-g-606178545393396.html)
+
+**Reference price: US$14**, as reported by the owner. Retail pricing may vary.
+
+| Specification | Details |
+| --- | --- |
+| Panel | 3.5-inch IPS, as described in the linked listing |
+| Resolution | 320 × 480 pixels; portrait layout used by TuringStats |
+| Connection | USB data and USB power |
+| Image format | 16-bit RGB565, little-endian, in the verified Rev-A protocol |
+| Tested USB identity | VID:PID `1a86:5722`; device-reported serial `USB35INCHIPSV2` |
+| Amiga connection | Freeway Triton Lite with Poseidon USB 4.5; native TuringStats application |
+
+Resolution, protocol and USB identity above describe the tested unit. Match the
+supported revision when choosing a display; similar-looking models can differ.
+
 ## Requirements
 
 | Requirement | Details |

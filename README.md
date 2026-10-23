@@ -30,7 +30,7 @@ running alongside it.
 
 [3.5-inch USB IPS hardware-monitor display — Temu listing](https://www.temu.com/3-5-inch-secondary-display-ips--angle-monitor-usb-surveillance-screen-usb-powered-pc-hardware--screen-desktop-pc--monitor-64-pre--for-computer-monitoring-aiad64-no-installation-required-g-606178545393396.html)
 
-**Reference price: US$14**, as reported by the owner. Retail pricing may vary.
+**Reference price: US$14.** Retail pricing may vary.
 
 | Specification | Details |
 | --- | --- |

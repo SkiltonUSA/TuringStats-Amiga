@@ -166,7 +166,7 @@ performed. Startup-Sequence and User-Startup were not edited.
 ## Workbench artwork
 
 The 64×64 icon depicts a portrait LCD with blue/orange activity bars and a USB
-cable. `make-art.py` is the editable pixel-art master (Python/Pillow); it writes
+cable. `make-art.py` is the editable pixel-art source (Python/Pillow); it writes
 `icon-art.h` and previews under `.context/amiga/turing-1023`. `build.sh` builds
 ApplyTuringIcon. After creating the basic launch icons, apply the artwork with:
 

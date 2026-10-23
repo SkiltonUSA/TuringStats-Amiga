@@ -7,7 +7,7 @@ Poseidon 4.5, Turing Rev-A 1a86:5722 display and ZZ9000 XX19c.
 - ZIP and LHA extraction matched all 24 packaged files byte for byte.
 - Native GCC build completed with `-Wall -Wextra -Werror`.
 - Binary transfers used CRC verification.
-- Earlier colour-patch and dashboard layouts were visually confirmed by the owner.
+- Earlier colour-patch and dashboard layouts were visually confirmed on the physical display.
 - Complete versioned eight-page rotation transferred successfully to the display;
   eight framebuffer snapshots were captured on the Amiga, then converted to PNG.
 - Rotation, cooperative Stop, singleton protection and USB cleanup passed.
